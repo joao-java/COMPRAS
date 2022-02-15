@@ -1,0 +1,117 @@
+@import '_variaveis';
+
+main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .fundo{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    #home{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #9696968f;
+        backdrop-filter: blur($blur--fundo);
+        display: flex;
+        flex-direction: row;
+
+        .logo__midia{   
+            width: 8%;
+            height: 100%;
+            padding: $pad--padrao;
+            position: relative;
+            img{
+                width: $width--logo;
+            }
+            .midia{
+                position: absolute;
+                width: 50%;
+                height: 25%;
+                background: red;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .main{
+            background: #66339970;
+            width: 92%;
+            height: 100%;
+            padding: $pad--padrao;
+            display: flex;
+            flex-direction: column;
+
+            .main1{
+                width: 100%;
+                height: 5%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                a{
+                    margin-right: $marg--main1;
+                    color: $col--main1;
+                }
+            }
+            .main2{
+                width: 100%;
+                height: 45%;
+                background: #ff0000a6;
+            }
+            .main3{
+                width: 100%;
+                height: 30%;
+                background: #ff000073;
+            }
+            .main4{
+                width: 100%;
+                height: 20%;
+                background: #ff00004b;
+            }
+
+        }
+
+        .lembrete{
+            position: absolute;
+            right: 4rem;
+            bottom: 0;
+            width: 13%;
+            height: 30%;
+            background: $back--lembrete;
+            padding: 2.5rem  $pad--medio 0 $pad--medio ;
+            img{
+                position: absolute;
+                top: 0;
+                left: 1rem;
+            }
+
+            p{
+                font-size: $font--p2;
+                padding-top: 0.5rem;
+            }
+
+            span{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                background: $back--lembrete-span;
+                padding: $pad--medio;
+                font-size: $font--p2; 
+                
+            }
+        }
+
+    }
+}
