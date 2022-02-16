@@ -28,7 +28,7 @@ main{
         .logo__midia{   
             width: 8%;
             height: 100%;
-            padding: $pad--padrao;
+            padding: $pad--padrao 0 $pad--padrao $pad--padrao;
             position: relative;
             img{
                 width: $width--logo;
@@ -45,7 +45,6 @@ main{
         }
 
         .main{
-            background: #66339970;
             width: 92%;
             height: 100%;
             padding: $pad--padrao;
@@ -66,7 +65,56 @@ main{
             .main2{
                 width: 100%;
                 height: 45%;
-                background: #ff0000a6;
+                display: flex;
+                padding-top: $pad--padrao;
+                .main2__banner{
+                    width: 55%;
+                    height: 100%;
+                    h1{
+                        font-size: 50px;
+                        padding-left: $pad--medio;
+                        position: relative;
+                        color: #fff;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            height: 100%;
+                            width: 4px;
+                            background: linear-gradient(to top, $col--princ1, $col--princ2);
+                        }
+                    }
+                    p{
+                        padding-top: $pad--medio;
+                        color: rgb(233, 233, 233);
+                    }
+                }
+                .main2__cartao{
+                    width: 45%;
+                    height: 100%;
+                    position: relative;
+                    padding: $pad--padrao;
+                    .cartao{
+                        height: 92%;
+                        width: 100%;
+                        background: #fff;
+                    }
+                    a{
+                        display: flex;
+                        align-items: center;
+                        right: 1rem;
+                        bottom: 0;
+                        position: absolute;
+                        color: #000;
+                        &:hover img{
+                            transform: translateX(5px);
+                        }
+                        img{
+                            width: 25px;
+                        }
+                    }
+                }
             }
             .main3{
                 width: 100%;
