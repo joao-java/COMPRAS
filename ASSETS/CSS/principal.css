@@ -1,3 +1,8 @@
+input {
+  border: none;
+  line-height: 25px;
+}
+
 main {
   width: 100%;
   height: 100vh;
@@ -43,6 +48,7 @@ main #home .logo__midia {
 
 main #home .logo__midia img {
   width: 75%;
+  float: right;
 }
 
 main #home .logo__midia .midia {
@@ -59,7 +65,7 @@ main #home .logo__midia .midia {
 main #home .main {
   width: 92%;
   height: 100%;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +100,7 @@ main #home .main .main2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
 main #home .main .main2 .main2__banner {
@@ -103,7 +109,7 @@ main #home .main .main2 .main2__banner {
 }
 
 main #home .main .main2 .main2__banner h1 {
-  font-size: 50px;
+  font-size: 80px;
   padding-left: 0.5rem;
   position: relative;
   color: #fff;
@@ -163,13 +169,134 @@ main #home .main .main2 .main2__cartao a img {
 main #home .main .main3 {
   width: 100%;
   height: 30%;
-  background: #ff000073;
+}
+
+main #home .main .main3 .main3__titulo h3 {
+  text-transform: uppercase;
+  color: #eeeeee;
+}
+
+main #home .main .main3 .main3__cards {
+  height: 70%;
+  padding: 1rem 0;
+}
+
+main #home .main .main3 .main3__cards .main3__cartoes {
+  width: 50%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+main #home .main .main3 .main3__cards .main3__cartoes a {
+  background: #eeeeee;
+  width: 20%;
+  height: 100%;
+  background: #eeeeee;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #515151;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 0px 10px #353434;
+          box-shadow: 0px 0px 10px #353434;
+}
+
+main #home .main .main3 .main3__cards .main3__cartoes a span {
+  padding: 0 0 0.7rem 0;
+  font-size: 20px;
+}
+
+main #home .main .main3 .main3__cards .main3__cartoes a img {
+  height: 30%;
+  width: 22%;
+}
+
+main #home .main .main3 .main3__cards p {
+  color: #eeeeee;
+}
+
+main #home .main .main3 .main3__im {
+  width: 25%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #home .main .main3 .main3__im a {
+  padding: 0.2rem 6rem;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  border-radius: 25px;
+  color: #eeeeee;
 }
 
 main #home .main .main4 {
-  width: 100%;
+  width: 50%;
   height: 20%;
-  background: #ff00004b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #home .main .main4 .atalho__cond {
+  padding: 1rem;
+  background: #CCCCCC;
+  height: 60%;
+}
+
+main #home .main .main4 .atalho__cond .main4__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #home .main .main4 .atalho__cond .main4__top .main4__top1 input {
+  border-radius: 10px;
+}
+
+main #home .main .main4 .atalho__cond .main4__top .main4__top2 {
+  padding-left: 1rem;
+}
+
+main #home .main .main4 .atalho__cond .main4__top .main4__top2 input {
+  background: transparent;
+  border-bottom: 1px solid #eeeeee;
+}
+
+main #home .main .main4 .atalho__cond .main4__vencimento {
+  padding: 0.3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #home .main .main4 .atalho__cond .main4__vencimento span {
+  padding-left: 0.3rem;
+  cursor: pointer;
 }
 
 main #home .lembrete {

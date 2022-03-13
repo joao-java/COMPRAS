@@ -1,5 +1,8 @@
 @import '_variaveis';
 
+// atalhos 
+input{ border: none; line-height: 25px;}
+
 main{
     width: 100%;
     height: 100vh;
@@ -32,6 +35,7 @@ main{
             position: relative;
             img{
                 width: $width--logo;
+                float: right;
             }
             .midia{
                 position: absolute;
@@ -47,7 +51,7 @@ main{
         .main{
             width: 92%;
             height: 100%;
-            padding: $pad--padrao;
+            padding: $pad--padrao $pad--padrao $pad--padrao 0px;
             display: flex;
             flex-direction: column;
 
@@ -66,12 +70,12 @@ main{
                 width: 100%;
                 height: 45%;
                 display: flex;
-                padding-top: $pad--padrao;
+                padding-top: $pad--padrao+2;
                 .main2__banner{
                     width: 55%;
                     height: 100%;
                     h1{
-                        font-size: 50px;
+                        font-size: 80px;
                         padding-left: $pad--medio;
                         position: relative;
                         color: #fff;
@@ -119,12 +123,97 @@ main{
             .main3{
                 width: 100%;
                 height: 30%;
-                background: #ff000073;
+                .main3__titulo{
+                    h3{
+                        text-transform: uppercase;
+                        color: $col--branco;
+                    }
+                }
+
+                .main3__cards{
+                    height: 70%;
+                    padding: 1rem 0 ;
+                    .main3__cartoes{
+                        width: 50%;
+                        height: 80%;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0.5rem 0;
+                        a{
+                            background: $col--branco;
+                            width: 20%;
+                            height: 100%;
+                            background: $col--branco;
+                            margin-right: 1rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            color: $col--main1;
+                            border-radius: 9px;
+                            box-shadow: 0px 0px 10px rgb(53, 52, 52);
+                            span{
+                                padding:  0 0 0.7rem 0;
+                                font-size: 20px;
+                            }
+                            img{
+                                height: 30%;
+                                width: 22%;
+                            }
+                        }
+                    }
+                    p{
+                        color: $col--branco;
+                    }
+
+                }
+                .main3__im{
+                    width: 25%;
+                    height: 20%;
+                    display: flex;
+                    align-items: center;
+                    a{
+                        padding: 0.2rem 6rem;
+                        text-align: center;
+                        border: 1px solid $col--branco;
+                        border-radius: 25px;
+                        color: $col--branco;
+                    }
+                }
             }
             .main4{
-                width: 100%;
+                width: 50%;
                 height: 20%;
-                background: #ff00004b;
+                display: flex;
+                align-items: center;
+                .atalho__cond{
+                    padding: 1rem;
+                    background: #CCCCCC;
+                    height: 60%;
+                    .main4__top{
+                        display: flex;
+                        .main4__top1{
+                            input{
+                                border-radius: 10px;
+                            }
+                        }
+                        .main4__top2{
+                            padding-left: 1rem;
+                            input{
+                                background: transparent;
+                                border-bottom: 1px solid $col--branco;
+                            }
+                        }
+                    }
+                    .main4__vencimento{
+                        padding: 0.3rem 0;
+                        display: flex;
+                        span{
+                            padding-left: 0.3rem ;
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
 
         }
