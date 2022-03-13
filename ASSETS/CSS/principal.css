@@ -55,11 +55,27 @@ main #home .logo__midia .midia {
   position: absolute;
   width: 50%;
   height: 25%;
-  background: red;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #home .logo__midia .midia i {
+  font-size: 50px;
 }
 
 main #home .main {
@@ -316,7 +332,7 @@ main #home .lembrete img {
 }
 
 main #home .lembrete p {
-  font-size: 13px;
+  font-size: 16px;
   padding-top: 0.5rem;
 }
 
@@ -328,7 +344,7 @@ main #home .lembrete span {
   text-align: center;
   background: #832a2a;
   padding: 0.5rem;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 * {
